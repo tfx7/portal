@@ -1,0 +1,233 @@
+/* 
+// Fox Design 2010 - 2014 - Copyrights
+//
+// Layout: Lucas AM
+// Desenvolvimento: Wagner Souza
+//
+// É proibida a cópia ou reprodução de quaisquer conteúdos deste site.
+// Entre em contato com os administradores responsáveis antes de tomar qualquer atitude
+*/
+@charset="utf-8";
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+a, a:focus, a:hover {
+	color: #fff;
+}
+body {
+	color: #a1a1a1;
+	text-align: center;
+	text-shadow: 0 1px 3px rgba(0,0,0,.5);
+	box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+	background: #000;
+	border-top: #ff9600 3px solid;
+    box-shadow: rgba(0,0,0,.6) 0 2px 5px inset;
+}
+img {
+	vertical-align: middle;
+}
+.left {
+	float: left;
+}
+.menu {
+	border-top: #3c3c3c 1px solid;
+	border-bottom: #3c3c3c 1px solid;
+	text-transform: uppercase;
+	font: 15px 'Oswald', sans-serif;
+	font-weight: normal;
+	background: rgba(0,0,0,.3);
+}
+.rounded {
+	-moz-border-radius: 3px;
+	-moz-border-radius-topLeft: 3px;
+	-moz-border-radius-topRight: 3px;
+	-moz-border-radius-bottomLeft: 3px;
+	-moz-border-radius-bottomRight: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	border-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.info {
+	padding: 3px 7px;
+	margin: 5px;
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 10px;
+	text-shadow: #333 1px 1px 3px;
+	box-shadow: #333 1px 1px 0;
+}
+.menu img {
+	margin: auto 20px;
+}
+.menu ul {
+	list-style: none;
+}
+.menu li {
+	display: inline-block;
+}
+.menu li a {
+	padding: 10px;
+	margin: 15px 0 0 0;
+	display: block;
+	transition: .5s;
+	color: #cccccc;
+}
+.menu li a:hover {
+	text-shadow: #ff9600 1px 3px 10px;
+	transition: .6s;
+	color: #ff9600;
+}
+.menu li a:after {
+	color: #6d6b70;
+	content: "|";
+	padding: 0 0 0 15px;
+}
+.socialMenu li a:after {
+	content: '';
+}
+.fa-facebook, .fa-twitter {
+	background-position: -379px 0;
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.fa-twitter:hover {
+	text-shadow: #2daae1 0 0 3px;
+	color: #2daae1;
+}
+.fa-facebook:hover {
+	text-shadow: #3c5b9b 0 0 3px;
+	color: #3c5b9b;
+}
+.fa-facebook:hover, .fa-twitter:hover {
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-moz-transition: .7s;
+	-webkit-transition: .7s;
+	-o-transition: .7s;
+	transition: .7s;
+}
+.header {
+	clear: both;
+}
+.socialMenu {
+	margin: -70px 0 0 0;
+	float: right;
+}
+.right {
+	float: right;
+}
+.loginRegister {
+	padding: 3px 15px;
+}
+.loginRegister a {
+	color: #bababa;
+}
+.menu a:hover {
+	text-decoration: none!important;
+}
+.footer {
+	font-size: 10px;
+	background: #111;
+	margin: 15px 0 0 0;
+    border-top: #222 1px solid;
+	padding: 7px;
+	cursor: default;
+    overflow:  hidden;
+}
+.copyrights{
+    margin:  0 7px 0 0;
+}
+header{
+    z-index: 999;
+position: relative;
+}
+main{
+    margin: -70px 0 0 0;
+z-index: 1;
+}
+.noAfter:after {
+	content: ''!important;
+}
+.socialIcons {
+	margin: 0 0 10px 0;
+	border-bottom: #292929 1px solid;
+	padding: 0 0 7px 0;
+}
+.socialIcons img:hover {
+	width: 30px;
+	margin: 0 5px;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-moz-transition: .7s;
+	-webkit-transition: .7s;
+	-o-transition: .7s;
+	transition: .7s;
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.socialIcons img {
+	-moz-transition: .5s;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	width: 30px;
+	margin: 0 5px;
+}
+@media (max-width: 767px) {
+    .socialMenu{
+        display:none!important;     
+    }
+	.navbar-header img {
+		display: block;
+		margin: 10px auto;
+		clear: both;
+	}
+	.navbar-header {
+		display: block;
+		margin: 0 auto;
+		float: none;
+		clear: both;
+	}
+	.menu li a:after {
+		content: '';
+	}
+	.menu li {
+		float: none;
+		display: block!important;
+		margin: auto;
+	}
+	.socialMenu {
+		margin: auto;
+		float: none;
+	}
+}
+@media (max-width: 335px) {
+    .socialMenu{
+        display:none!important;   
+    }
+    .socialIcons img {
+        margin: 10px 5px;
+    }
+    .loginRegister a ,.menu i{
+        display:  none;
+    }
+    .footer{
+        font-size:  9px;   
+    }
+}
